@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: uagents
+Version: 0.11.0
+Summary: Lightweight framework for rapid agent-based development
+License: Apache 2.0
+Author: Ed FitzGerald
+Author-email: edward.fitzgerald@fetch.ai
+Requires-Python: >=3.9,<3.13
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: all
+Provides-Extra: geo
+Provides-Extra: orm
+Provides-Extra: proxy
+Provides-Extra: remote-agents
+Provides-Extra: wallet
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: apispec (>=6.0.2,<7.0.0)
+Requires-Dist: bech32 (>=1.2.0,<2.0.0)
+Requires-Dist: cosmpy (>=0.9.2,<0.10.0)
+Requires-Dist: ecdsa (>=0.18.0,<0.19.0)
+Requires-Dist: fastapi (>=0.97.0,<0.98.0) ; extra == "all" or extra == "proxy"
+Requires-Dist: fetchai-babble (>=0.4.1,<0.5.0) ; extra == "all" or extra == "wallet"
+Requires-Dist: geopy (>=2.3.0,<3.0.0) ; extra == "all" or extra == "geo"
+Requires-Dist: msgpack (>=1.0.4,<2.0.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: pyngrok (>=5.2.3,<6.0.0) ; extra == "all" or extra == "remote-agents"
+Requires-Dist: tortoise-orm (>=0.19.2,<0.20.0) ; extra == "all" or extra == "orm"
+Requires-Dist: uvicorn (>=0.20.0,<0.21.0)
+Requires-Dist: websockets (>=10.4,<11.0)
+Description-Content-Type: text/markdown
+
+## Installation (Python)
+
+Install μAgents for Python 3.8 to 3.12:
+
+```bash
+poetry install
+poetry shell
+```
+
+## Documentation
+
+Build and run the docs locally with:
+
+```bash
+mkdocs serve
+```
+
+Or go to the official docs site: https://docs.fetch.ai/uAgents.
+
+## Examples
+
+The [`examples`](https://github.com/fetchai/uAgents/tree/main/python/examples) folder contains several examples of how to create and run various types of agents.
