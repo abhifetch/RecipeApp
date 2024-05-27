@@ -42,7 +42,8 @@ Welcome to the Recipe Integration project using uAgents! This project leverages 
 
 4. **Run the uAgents backend**:
     ```bash
-    python main.py
+    cd backend/agents
+    python nutritions.py # similarly run agents on different terminals
     ```
 
 ### Frontend (React)
